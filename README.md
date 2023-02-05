@@ -16,4 +16,4 @@ This is a Cash Register manager App built with vanilaJs. It should tell the cash
 
 ## Preview
  
-  ![CashRegister](https://user-images.githubusercontent.com/66691162/216814427-8e518c32-3f78-4efd-ba65-c5c458f23f13.png)
+ ![CashRegister](https://user-images.githubusercontent.com/66691162/216839285-83c52de7-c339-477a-9d9c-d31c684563e8.png)
