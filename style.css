@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --primary-color: orangered;
+    --secondary-color: crimson;
+    --font-color: lawngreen;
+    --sub-font-color: azure;
+    --font-red: #ff0000;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container .centered-container {
+    background-color: var(--primary-color);
+    max-width: 80%;
+    height: 35rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0rem 0rem 0.6rem 0.6rem;
+    border: 2px solid var(--primary-color);
+    box-shadow: 1px 1px 0.5rem 1px var(--secondary-color);
+}
+
+.heading {
+    color: var(--font-color);
+}
+
+.desc {
+    margin-bottom: 2rem;
+    font-size: large;
+    color: var(--sub-font-color);
+}
+
+.label,
+.input {
+    display: block;
+    margin: 0.5rem auto;
+}
+
+.label {
+    color: var(--font-color);
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+.input {
+    display: block;
+    margin: auto;
+    color: var(--secondary-color);
+    padding: 0rem;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    box-shadow: 1px 1px 0.5rem 1px var(--secondary-color);
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.amount-section {
+    /* width: 50vw; */
+    display: block;
+    margin: auto;
+}
+
+.button {
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 0.2rem 2.5rem;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    box-shadow: 1px 1px 0.5rem 1px var(--secondary-color);
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* .next-button {
+    display: inline-block;
+} */
+
+#err-message {
+    font-size: large;
+    font-weight: bold;
+    color: var(--font-red);
+}
+
+/* Table Section */
+
+.table-container {
+    display: block;
+    margin: auto;
+}
+
+table {
+    margin: 2rem auto;
+    border-collapse: collapse;
+}
+
+table caption {
+    color: var(--font-color);
+    margin-bottom: 1rem;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 0.2rem 0.4rem;
+    border: 2px solid var(--secondary-color);
+}
+
+th {
+    color: var(--secondary-color);
+}
+
+tr {
+    color: var(--sub-font-color);
+}
+
+/* Footer Section */
+
+.footer {
+    width: 100vw;
+    margin: 3rem auto 0rem auto;
+    text-align: center;
+}
+
+.footer .footer-heading {
+    font-size: large;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.footer ul {
+    margin-top: 1rem;
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+}
+
+.footer .link {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--sub-font-color);
+}
