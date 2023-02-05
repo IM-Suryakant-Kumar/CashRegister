@@ -4,10 +4,10 @@
 }
 
 :root {
-    --primary-color: orangered;
-    --secondary-color: crimson;
-    --font-color: lawngreen;
-    --sub-font-color: azure;
+    --primary-color: #badc58;
+    --secondary-color: #6D214F;
+    --font-color: #45aaf2;
+    --sub-font-color: #20bf6b;
     --font-red: #ff0000;
 }
 
@@ -28,9 +28,6 @@ body {
     height: 40rem;
     text-align: center;
     padding: 1rem;
-    border-radius: 0rem 0rem 0.6rem 0.6rem;
-    border: 2px solid var(--primary-color);
-    box-shadow: 1px 1px 0.5rem 1px var(--secondary-color);
 }
 
 .heading {
@@ -47,6 +44,10 @@ body {
 .input {
     display: block;
     margin: 0.5rem auto;
+}
+
+input:focus {
+    outline: none;
 }
 
 .label {
@@ -133,30 +134,54 @@ tr {
 /* Footer Section */
 
 .footer {
-    width: 100vw;
-    margin: 3rem auto 0rem auto;
     text-align: center;
+    margin-top: 8rem;
+    background-color: var(--primary-color);
+    border-top-left-radius: 2rem;
+    border: 1px solid var(--secondary-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-.footer .footer-heading {
-    font-size: large;
-    font-weight: bold;
+.footer-heading {
+    font-size: x-large;
+    padding: 0.5rem;
+    margin: 0.7rem 0rem;
     color: var(--secondary-color);
 }
 
-.footer ul {
-    margin-top: 1rem;
-    list-style: none;
+.social-links {
+    margin: 0.5rem;
     padding-inline-start: 0px;
 }
 
-.footer ul li {
-    display: inline-block;
-    padding: 0.5rem 1.1rem;
+.list-non-bullet {
+    list-style: none;
 }
 
-.footer .link {
+.list-item-inline {
+    display: inline;
+}
+
+.link {
     text-decoration: none;
+    padding: 0.5rem 2rem;
+    color: var(--font-color);
+    font-size: large;
+}
+
+h4 {
+    margin: 1rem 0rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    color: var(--sub-font-color);
+    word-spacing: 20px;
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 650px) {
+    input {
+        width: 50%;
+    }
 }
