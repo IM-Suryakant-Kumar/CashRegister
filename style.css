@@ -25,7 +25,7 @@ body {
 .container .centered-container {
     background-color: var(--primary-color);
     max-width: 80%;
-    height: 35rem;
+    height: 40rem;
     text-align: center;
     padding: 1rem;
     border-radius: 0rem 0rem 0.6rem 0.6rem;
@@ -100,8 +100,8 @@ body {
 /* Table Section */
 
 .table-container {
-    display: block;
-    margin: auto;
+    overflow-x: auto;
+    scrollbar-color: rebeccapurple green red;
 }
 
 table {
